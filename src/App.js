@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { SignupForm } from './signup-form';
+import { YupSignupForm } from './yup-signup-form'
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>W/O Yup</h2>
+      <SignupForm />
+      <br /> 
+      <h2>W/ Yup</h2>
+      <YupSignupForm />
     </div>
-  );
+  )
 }
-
-export default App;
